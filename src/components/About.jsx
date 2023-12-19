@@ -1,5 +1,5 @@
 import profilePicture from "../assets/images/profile.jpg";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import {
   FaEye,
   FaPhoneAlt ,
@@ -38,12 +38,12 @@ const About = () => {
             new technologies, and improvements in the Tech space.
           </p>
           <div className="flex justify-center gap-[1.5rem] lg:gap-[2rem] mt-[2rem]">
-            <Link
-              to={"https://drive.google.com/file/d/1f9JIddKX73VU2jrifkfIoy8WyQESHjEE/view?usp=drivesdk"}
+            <a
+              href={"https://drive.google.com/file/d/1f9JIddKX73VU2jrifkfIoy8WyQESHjEE/view?usp=drivesdk"}
               className={`buttons w-[10rem] md:w-[11.5rem] h-[3.5rem] lg:h-[4rem] font-semibold md:text-[1.25rem] text-[1.1rem] ${mode === "dark" ? "dark-bg-buttons" : "light-bg-buttons"} rounded-lg`}
             >
               <FaEye /> <span>View CV</span>
-            </Link>
+            </a>
             <a
               href="#contact"
               className={`buttons w-[10rem] md:w-[11.5rem] h-[3.5rem] lg:h-[4rem] font-semibold md:text-[1.25rem] text-[1.1rem] ${mode === "dark" ? "dark-outline-buttons" : "light-outline-buttons"} rounded-lg`}

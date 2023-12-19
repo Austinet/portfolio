@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import project1 from "../assets/images/countries.jpg";
 import project2 from "../assets/images/ecommerce.png";
 import project3 from "../assets/images/bookmark.png";
@@ -148,22 +148,22 @@ const Projects = () => {
                   <div className="absolute bg-[#0000005d] backdrop-blur-sm left-0 bottom-0 w-full rounded-b-md">
                     <ul className="flex gap-[1.3rem] justify-center items-center py-[1.2rem] rounded-b-md">
                       <li>
-                        <Link
+                        <a
                           className={`buttons ${mode === "dark" ? "dark-bg-buttons" : "light-bg-buttons"} w-[8rem] h-[2.8rem] font-medium text-[1.1rem] rounded-md`}
-                          to={live}
+                          href={live}
                         >
                           <HiOutlineExternalLink />
                           <span>View Site</span>
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link
+                        <a
                           className={`buttons  ${mode === "dark" ? "dark-outline-buttons" : "light-outline-buttons"} w-[8rem] h-[2.8rem] font-medium text-[1.1rem] leading-normal rounded-md`}
-                          to={repository}
+                          href={repository}
                         >
                           <FaGithub />
                           <span>Github</span>
-                        </Link>
+                        </a>
                       </li>
                     </ul>
                   </div>

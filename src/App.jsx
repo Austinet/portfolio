@@ -1,4 +1,4 @@
-import {Routes, Route} from "react-router-dom"
+// import {Routes, Route} from "react-router-dom"
 import Home from "./pages/Home"
 import  AOS  from "aos"
 import "aos/dist/aos.css"; // Import AOS styles
@@ -13,9 +13,10 @@ const App = () => {
   })
 
   return (
-    <Routes>
-      <Route exact path="/" element={<Home />} />
-    </Routes>
+    <Home />
+    // <Routes>
+    //   <Route exact path="/" element={<Home />} />
+    // </Routes>
   )
 }
 

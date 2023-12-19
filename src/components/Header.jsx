@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaBars, FaMoon } from "react-icons/fa";
@@ -51,7 +51,7 @@ const Header = () => {
         <div className="px-[1rem] py-[1.5rem] lg:px-[3.5rem] flex justify-between items-center">
           <div>
             <h2 className={`${mode === "dark" ? "text-[#62E0D9] hover:text-white" : ""} font-semibold lg:text-[2rem] text-[1.5rem]`}>
-              <Link to="/">{`<Austinet />`}</Link>
+              <a href="/">{`<Austinet />`}</a>
             </h2>
           </div>
           <div className="flex items-center gap-[1rem]">
