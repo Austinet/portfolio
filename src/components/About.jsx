@@ -10,11 +10,11 @@ const About = () => {
   const {mode} = useModeContext()
 
   return (
-    <section id="about" className={` ${mode === "light" ? "bg-[#EAF6F6]" : ""}`} data-aos="fade-up" data-aos-delay="200">
+    <section id="about" className={` ${mode === "light" ? "bg-[#EAF6F6]" : ""} z-10`}>
       {/* about-container */}
       <div className="px-[1rem] py-[1.5rem] lg:px-[3.5rem] lg:py-[4rem] text-center">
         {/* about image */}
-        <div className="mt-[1rem] md:mt-0" data-aos="zoom-in"  data-aos-duration="2000">
+        <div className="mt-[1rem] z-10 md:mt-0" data-aos="zoom-in"  data-aos-duration="2000">
           <img
             src={profilePicture}
             alt="A picture of Udhe Austine Ogaga"
@@ -23,7 +23,7 @@ const About = () => {
         </div>
 
         {/* about text */}
-        <div className="max-w-[700px] mx-auto mt-[1.5rem] md:mt-[1.2rem]">
+        <div className="max-w-[700px] mx-auto mt-[1.5rem] md:mt-[1.2rem]" data-aos="fade-up" data-aos-delay="200">
           <h1 className="text-[1.4rem] md:text-[2rem]  leading-normal">
             <span>Hi, I&apos;m</span> <span className="font-semibold">Udhe Austine Ogaga</span>
           </h1>
